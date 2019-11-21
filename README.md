@@ -101,6 +101,7 @@ git push
 
 ## proTips
 
+### stash
 Wir arbeiten vor uns hin an:
 
 ```
@@ -117,7 +118,12 @@ und danach:
 ```
 git stash pop
 ```
-
+### git add --patch 
+manchmal vergisst man aber den `git stash` oder macht mehrere unabhängige Aufgaben auf einmal in einem repository.
+Dann hilft:
+```
+git add -p
+```
 
 ### Merken, Aufschreiben, Machen
 
