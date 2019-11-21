@@ -84,6 +84,11 @@ Plus weboberfläche, plus benefits.
 ```
 git clone https://gitlab.com/klml/lorem.git
 cd lorem
+cat .git/config
+```
+
+etwas codework, ein commit und dann ein __push__:
+```
 date > ich.md
 git add ich.md
 git commit -a -m "was anderes"
