@@ -144,3 +144,9 @@ git status
 ```
 
 Und immer alles lesen was einem `git status` sagt!
+
+## Weblinks
+
+Bei Problemen oder Ideen hilft die Suchmaschine Deiner Wahl, gute gitlivehacks zum drüberlesen und im Hinterkopf behalten:
+
+* [ohshitgit.com](https://ohshitgit.com)
