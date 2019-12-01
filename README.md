@@ -1,8 +1,8 @@
-## Git Schulung
+# howto Git
 
 Git ist eine *verteilte* __Versionsverwaltung__.
 
-### Versionsverwaltung
+## Versionsverwaltung
 
 * git ist ein __Programm__ (z.B. wie tar) das jede commitede __Version__ einer Datei in ein __repository__ abspeichert:
   * um mit einem __diff__ nur Änderungen zu sehen
@@ -19,7 +19,7 @@ Es ist kein Serverdienst, [kann aber](#verteilt) einer sein.
 Alles (config, versionen, branches) wird in einem Directory im Unterordner `.git` gespeichert.
 
 
-#### git init
+### git init
 
 Ein directory mit git versionieren:
 
@@ -69,9 +69,9 @@ git log
 
 
 
-### branch, clone, fork, pull, push, spoon, merge?
+## branch, clone, fork, pull, push, spoon, merge?
 
-#### branch
+### branch
 
 Ein __branch__ (engl. _Zweig_) ist ein Entwicklungsstrang innerhalb eines repositories.
 
@@ -89,7 +89,7 @@ branchens können und sollen wieder __gemerged__ werden:
 
 Je mehr branches, desto mehr muss gemerged werden, was zu mergekonfliten führen kann!
 
-#### clone
+### clone
 
 Ein __clone__ ist eine Kopie eines repositorys, einschließlich aller Versionen und branches.
 Im clone, z.B. lokaler Rechner, kann ganz normal weiter commited, gebranched, getagged werden.
@@ -100,7 +100,7 @@ Oder Änderungen anderer clones __gepulled__ werden.
 Das geht auch zwischen zwei plain hosts über z.B. ssh.
 Das passiert oft über ein "zentrales" repository...
 
-#### git{la|hu}b
+### git{la|hu}b
 
 Auch ein privates gitlab, gitlab.com oder github.com sind nur ein .git auf einem etwas zentraleren server.
 Plus weboberfläche, plus benefits.
@@ -128,7 +128,7 @@ git commit -a -m "was anderes"
 git push
 ```
 
-#### fork
+### fork
 
 Ein __fork__ ist das _unabhängige_ Weiterentwickeln eines clones.
 Entweder weil man mit dem Ursprungsprojekt unzufrieden ist, oder weil man seine eigenen Änderungen ausprobieren will.
@@ -161,7 +161,7 @@ Dann hilft:
 git add -p
 ```
 
-### Merken, Aufschreiben, Machen
+## Merken, Aufschreiben, Machen
 
 immer wenn man an einem bestehenden repository zu arbeiten beginnt:
 ```
