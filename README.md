@@ -102,7 +102,7 @@ Das passiert oft über ein "zentrales" repository...
 
 ### git{la|hu}b
 
-Auch ein privates gitlab, gitlab.com oder github.com sind nur ein .git auf einem etwas zentraleren server.
+Auch ein privates gitlab, [gitea](https://gitea.io), gitlab.com oder github.com sind nur ein .git auf einem etwas zentraleren server.
 Plus weboberfläche, plus benefits.
 
 ```
