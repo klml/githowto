@@ -10,11 +10,11 @@ Git ist eine *verteilte* __Versionsverwaltung__.
 
 * __Versionen__ sind nicht nummmeriert (123) sondern __hash__ (9e1f75....):
   * unabhängig da verteilt
-  * branches abzweigen
-  * forks (sind streng genommen nur branches)
+  * [branches](#branch) abzweigen
+  * [forks](#fork) unabhängig weiterentwickeln
   * können __getaged__ werden (v1.2.3, latest)
 
-Es ist kein Serverdienst, [kann aber](#verteilt) einer sein.
+Es ist kein Serverdienst, [kann aber](#gitlahub) einer sein.
 
 Alles (config, versionen, branches) wird in einem Directory im Unterordner `.git` gespeichert.
 
