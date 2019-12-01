@@ -10,9 +10,9 @@ Git ist eine *verteilte* __Versionsverwaltung__.
 
 * __Versionen__ sind nicht nummmeriert (123) sondern __hash__ (9e1f75....):
   * unabhängig da verteilt
-  * abzweige branches
+  * branches abzweigen
   * forks (sind streng genommen nur branches)
-  * können getaged werden
+  * können __getaged__ werden (v1.2.3, latest)
 
 Es ist kein Serverdienst, [kann aber](#verteilt) einer sein.
 
@@ -68,12 +68,37 @@ git log
 ```
 
 
-### Verteilt
 
-git muss nicht nur auf einem System sein, repositories können sich aufteilen (forken) und wieder vereinen (pull & push).
+### branch, clone, fork, pull, push, spoon, merge?
+
+#### branch
+
+Ein __branch__ (engl. _Zweig_) ist ein Entwicklungsstrang innerhalb eines repositories.
+
+Branches werden nach unterschiedlichen Philosophien gehandhabt:
+
+* *master* (ist default und haben die meisten Projekte)
+* versions
+* featurebranches
+* dev, prod, live, nightly, bugfix
+
+branchens können und sollen wieder __gemerged__ werden:
+
+* features und dev in den master
+* aber auch rückwärts master in dev und features!
+
+Je mehr branches, desto mehr muss gemerged werden, was zu mergekonfliten führen kann!
+
+#### clone
+
+Ein __clone__ ist eine Kopie eines repositorys, einschließlich aller Versionen und branches.
+Im clone, z.B. lokaler Rechner, kann ganz normal weiter commited, gebranched, getagged werden.
+
+Diese Änderungen können dann wieder in das *[remote "origin"]* zurück __gepushed__ werden.
+Oder Änderungen anderer clones __gepulled__ werden.
+
 Das geht auch zwischen zwei plain hosts über z.B. ssh.
-
-Oder eben ...
+Das passiert oft über ein "zentrales" repository...
 
 #### git{la|hu}b
 
@@ -102,6 +127,13 @@ date > ich.md
 git commit -a -m "was anderes"
 git push
 ```
+
+#### fork
+
+Ein __fork__ ist das _unabhängige_ Weiterentwickeln eines clones.
+Entweder weil man mit dem Ursprungsprojekt unzufrieden ist, oder weil man seine eigenen Änderungen ausprobieren will.
+Forks können und sollen aber auch wieder mit einem pullrequest (github) oder mergerequest (gitlab) in das __upstream__ repository zurück.
+
 
 ## proTips
 
