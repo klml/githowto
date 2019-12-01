@@ -7,7 +7,6 @@ Git ist eine *verteilte* __Versionsverwaltung__.
 * git ist ein __Programm__ (z.B. wie tar) das jede commitede __Version__ einer Datei in ein __repository__ abspeichert:
   * um mit einem __diff__ nur Änderungen zu sehen
   * einen __rollback__ ermöglichen
-  * git speichert nur die Änderung, nicht die gesamte Version
 
 * __Versionen__ sind nicht nummmeriert (123) sondern __hash__ (9e1f75....):
   * unabhängig da verteilt
