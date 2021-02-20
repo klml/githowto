@@ -176,8 +176,9 @@ git status
 
 Und immer alles lesen was einem `git status` sagt!
 
-## Weblinks
+## Weblinks und Buch
 
 Bei Problemen oder Ideen hilft die Suchmaschine Deiner Wahl, gute gitlivehacks zum drüberlesen und im Hinterkopf behalten:
 
 * [ohshitgit.com](https://ohshitgit.com)
+* Einführung von den Grundlagen bis zu den meisten Anwendungsfällen: [Sujeevan Vijayakumaran: Versionsverwaltung mit Git](https://www.bookzilla.de/shop/article/40280086/sujeevan_vijayakumaran_versionsverwaltung_mit_git.html) ISBN 9783747500422
