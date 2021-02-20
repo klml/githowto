@@ -97,12 +97,12 @@ Im clone, z.B. lokaler Rechner, kann ganz normal weiter commited, gebranched, ge
 Diese Änderungen können dann wieder in das *[remote "origin"]* zurück __gepushed__ werden.
 Oder Änderungen anderer clones __gepulled__ werden.
 
-Das geht auch zwischen zwei plain hosts über z.B. ssh.
+Das geht auch zwischen zwei Verzeichnissen auf einem Rechner oder zwischen zwei plain hosts über ssh oder https.
 Das passiert oft über ein "zentrales" repository...
 
 ### git{la|hu}b
 
-Auch ein privates gitlab, [gitea](https://gitea.io), gitlab.com oder github.com sind nur ein .git auf einem etwas zentraleren server.
+Auch ein privates gitlab, [gitea](https://gitea.io), gitlab.com oder github.com sind nur ein .git auf einem etwas zentraleren Server.
 Plus weboberfläche, plus benefits.
 
 ```
