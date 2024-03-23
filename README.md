@@ -1,6 +1,13 @@
 # howto Git
 
-Git ist eine *verteilte* __Versionsverwaltung__.
+Git ist eine *verteilte* __Versionsverwaltung__ für Datein.
+Git wird vor allem in der Softwareentwicklung genutzt, kann aber auch Texte wie Wiki, Bücher oder Blogbeiträge versionieren.
+Zur Not auch Bilder und andere Dateien.
+
+> git - the stupid content tracker
+
+aus `man git`
+
 
 ## Versionsverwaltung
 
@@ -8,20 +15,20 @@ Git ist eine *verteilte* __Versionsverwaltung__.
   * um mit einem __diff__ nur Änderungen zu sehen
   * einen __rollback__ ermöglichen
 
-* __Versionen__ sind nicht nummmeriert (123) sondern __hash__ (9e1f75....):
+* die __Versionen__ sind nicht nummmeriert (123) sondern mit einem __hash__ (9e1f75....) identifiziert:
   * unabhängig da verteilt
-  * [branches](#branch) abzweigen
-  * [forks](#fork) unabhängig weiterentwickeln
-  * können __getaged__ werden (v1.2.3, latest)
+  * [branches](#branch) können abzweigen
+  * [forks](#fork) können unabhängig weiterentwickelt werden
+  * oder können __getaged__ werden (`v1.2.3`, `latest`)
 
-Es ist kein Serverdienst, [kann aber](#gitlahub) einer sein.
+Git ist kein Serverdienst, [kann aber](#gitlahub) einer sein.
 
-Alles (config, versionen, branches) wird in einem Directory im Unterordner `.git` gespeichert.
+Alles (config, versionen, branches) wird in einer _lokale Kopie_ des gesamten Repositorys im Unterordner `.git` gespeichert.
 
 
 ### git init
 
-Ein directory mit git versionieren:
+Ein directory zu Demonstrationszwecken mit git versionieren:
 
 ```
 mkdir test && cd test
@@ -29,26 +36,21 @@ git init
 tree .git
 ```
 
-Git braucht nur diesen Unterordner `.git`, sogar viel weniger:
+Git braucht nur diesen Unterordner `.git`, sogar viel weniger.
+Um das zu zeigen kann zu Demonstrationszwecken recht viel weg löschen:
 
 ```
 rm -rf .git/branches/ .git/hooks/ .git/info/ .git/description .git/objects/info/ .git/objects/pack/ .git/refs/tags/ .git/refs/heads/ .git/config
-
-git status
-
-cat .git/*
-ref: refs/heads/main
-cat: .git/objects: Ist ein Verzeichnis
-cat: .git/refs: Ist ein Verzeichnis
-
-tree .git/
-.git/
-├── HEAD
-├── objects
-└── refs
 ```
 
-und jetzt arbeiten wir
+Mit `git status` sieht man das dieser _lokale Kopie_ immer noch alles kann.
+Mit `tree .git/` sieht man nur die Datei `HEAD` und zwei Verzeichnisse.
+
+Das alles muss und sollte man in einem echten git checkout __nicht machen__!
+
+
+
+und jetzt arbeiten wir in dieser minimalistischen _lokale Kopie_:
 
 ```
 date > test.md
@@ -57,15 +59,17 @@ git add test.md
 git status
 git commit -m "init"
 git status
-tree .git/
-cat .git/COMMIT_EDITMSG
 date >> test.md
 git diff
 git commit -a -m "zweiter"
 git status
-tree .git/
-git log
 ```
+
+Diese nun zwei mal bearbeitete _lokale Kopie_ kann man untersuchen:
+
+* `tree .git/` zeigt ganz viele binary Dateien die den Arbeitsverlauf jeder Verson speichern
+* in `cat .git/COMMIT_EDITMSG` steht die letzte commitmessage
+* `git log` zeigt die metadaten der letzten commits
 
 
 
