@@ -37,7 +37,7 @@ tree .git
 ```
 
 Git braucht nur diesen Unterordner `.git`, sogar viel weniger.
-Um das zu zeigen kann zu Demonstrationszwecken recht viel weg löschen:
+Um das zu zeigen kann man zu Demonstrationszwecken recht viel weg löschen:
 
 ```
 rm -rf .git/branches/ .git/hooks/ .git/info/ .git/description .git/objects/info/ .git/objects/pack/ .git/refs/tags/ .git/refs/heads/ .git/config
@@ -67,7 +67,7 @@ git status
 
 Diese nun zwei mal bearbeitete _lokale Kopie_ kann man untersuchen:
 
-* `tree .git/` zeigt ganz viele binary Dateien die den Arbeitsverlauf jeder Verson speichern
+* `tree .git/` zeigt ganz viele binary Dateien die den Arbeitsverlauf jeder Version speichern
 * in `cat .git/COMMIT_EDITMSG` steht die letzte commitmessage
 * `git log` zeigt die metadaten der letzten commits
 * `git diff HEAD~1` den Unterschied von der aktuellen Version zur einer Version zurück
