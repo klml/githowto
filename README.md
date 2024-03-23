@@ -37,7 +37,7 @@ rm -rf .git/branches/ .git/hooks/ .git/info/ .git/description .git/objects/info/
 git status
 
 cat .git/*
-ref: refs/heads/master
+ref: refs/heads/main
 cat: .git/objects: Ist ein Verzeichnis
 cat: .git/refs: Ist ein Verzeichnis
 
@@ -77,15 +77,15 @@ Ein __branch__ (engl. _Zweig_) ist ein Entwicklungsstrang innerhalb eines reposi
 
 Branches werden nach unterschiedlichen Philosophien gehandhabt:
 
-* *master* (ist default und haben die meisten Projekte)
+* *main* (ist default und haben die meisten Projekte)
 * versions
 * featurebranches
 * dev, prod, live, nightly, bugfix
 
 branchens können und sollen wieder __gemerged__ werden:
 
-* features und dev in den master
-* aber auch rückwärts master in dev und features!
+* features und dev in den main
+* aber auch rückwärts main in dev und features!
 
 Je mehr branches, desto mehr muss gemerged werden, was zu mergekonfliten führen kann!
 
