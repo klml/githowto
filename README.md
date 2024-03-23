@@ -70,7 +70,7 @@ Diese nun zwei mal bearbeitete _lokale Kopie_ kann man untersuchen:
 * `tree .git/` zeigt ganz viele binary Dateien die den Arbeitsverlauf jeder Verson speichern
 * in `cat .git/COMMIT_EDITMSG` steht die letzte commitmessage
 * `git log` zeigt die metadaten der letzten commits
-
+* `git diff HEAD~1` den Unterschied von der aktuellen Version zur einer Version zurück
 
 
 ## branch, clone, fork, pull, push, spoon, merge?
